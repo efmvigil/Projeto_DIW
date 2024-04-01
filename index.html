@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <!-- Importação do CSS -->
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <meta charset="UTF-8" />
+    <!-- Título na aba do browser -->
+    <title>CodeVerse</title>
+    <!-- Importação de fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@500&family=Exo+2:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Cria o cabeçalho -->
+    <header class="header-pagina" id="header">
+      <!--Cria um container para a imagem  -->
+      <figure><img src="img/logo.png" alt="Logo da codeverse" /></figure>
+
+      <div class="container-header">
+        <!-- Cria um menu de navegação -->
+        <nav>
+          <!-- Cria uma lista não-ordenada -->
+          <ul class="navbar">
+            <li class="li-nav">
+              <a class="a-nav" href="#matriculas">Matrículas</a>
+            </li>
+            <li class="li-nav"><a class="a-nav" href="#sobre">Sobre Nós</a></li>
+            <li class="li-nav">
+              <a class="a-nav" href="#depoimentos">Depoimentos</a>
+            </li>
+            <li class="li-nav">
+              <a class="a-nav" href="#perguntas-frequentes">FAQ</a>
+            </li>
+            <li class="li-nav">
+              <a class="a-nav" href="#parceiros">Parceiros</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Cria uma seção (conteúdo semântico, não é usada para estilo)-->
+    <section id="home">
+      <!-- Cria uma divisão (só para fins de estilo) -->
+      <div class="box-home">
+        <div class="imagem-home">
+          <img
+            src="img/mercado.png"
+            alt="Ícone demonstrando gráficos de mercado"
+          />
+          <h3>O MELHOR DO MERCADO</h3>
+          <p>
+            Profissionais dispostos e atenciosos para garantir que você
+            aproveite o máximo possivel.
+          </p>
+        </div>
+
+        <div class="imagem-home">
+          <img src="img/aprovacao.png" alt="Ícone de símbolo de aprovação" />
+          <h3>100% DE APROVAÇÃO</h3>
+          <p>
+            Nossos alunos saem do curso muito satisfeitos e preparados para
+            qualquer desafio.
+          </p>
+        </div>
+
+        <div class="imagem-home">
+          <img src="img/gratis.png" alt="Ícone com a palavra 'free'" />
+          <h3>AULA TESTE GRATUITA</h3>
+          <p>
+            Disponibilizamos uma aula teste completamente gratuita para você se
+            decidir com mais confiança.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="matriculas">
+      <h2>MATRICULE-SE JÁ</h2>
+      <!-- Cria um formulário. Action: Indica para onde o formulário será enviado.  Método POST: transação é encapsulada junto ao corpo da requisição HTTP e não
+pode ser vista na URL, maior grau de segurança e flexibilidade quanto a tipos de dados.  -->
+      <div class="box-matriculas">
+        <div class="formulario-matriculas">
+          <form action="processar_matricula.php" method="POST">
+            <!-- Define um rótulo de um campo de formulário -->
+            <label for="nome">Nome completo:</label><br />
+            <!-- Insere um campo de formulário-->
+            <input
+              type="text"
+              id="nome"
+              name="nome"
+              placeholder="Digite seu nome"
+              required
+            /><br /><br />
+
+            <label for="email">Email:</label><br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Digite seu e-mail"
+              required
+            /><br /><br />
+
+            <label for="telefone">Telefone:</label><br />
+            <input
+              type="tel"
+              id="telefone"
+              name="telefone"
+              placeholder="Digite seu telefone"
+              required
+            /><br /><br />
+
+            <label for="cpf">CPF:</label><br />
+            <input
+              type="text"
+              id="cpf"
+              name="cpf"
+              placeholder="Digite seu CPF"
+              required
+            /><br /><br />
+
+            <label for="idade">Idade:</label><br />
+            <input
+              type="number"
+              name="idade"
+              id="idade"
+              min="1"
+              max="120"
+              value="18"
+            /><br /><br />
+
+            <input type="submit" value="Enviar Matrícula" id="btn-matriculas" />
+          </form>
+        </div>
+
+        <div class="conteudo">
+          <h3>Conteúdo do curso</h3>
+          <ol>
+            <li>Introdução ao HTML</li>
+            <li>Estrutura básica de uma página HTML</li>
+            <li>Tags HTML fundamentais</li>
+            <li>Formatação de texto e estilos</li>
+            <li>Inserção de imagens e links</li>
+            <li>Tabelas e listas</li>
+            <li>Formulários</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre">
+      <h2>SOBRE NÓS</h2>
+
+      <div class="box-sobre">
+        <p>
+          Na CodeVerse acreditamos que a programação é o futuro e queremos
+          tornar o aprendizado dessa habilidade vital acessível a todos. Nossa
+          plataforma é uma solução abrangente de venda de cursos de programação,
+          projetada para atender às necessidades tanto de iniciantes quanto de
+          programadores experientes em busca de atualização de conhecimentos.
+        </p>
+      </div>
+
+      <h3>NOS ACOMPANHE NAS REDES</h3>
+      <nav class="logos">
+        <a href="https://www.facebook.com"
+          ><img src="img/facebook.png" class="img-redes" alt="Logo do facebook"
+        /></a>
+        <a href="https://www.twitter.com"
+          ><img src="img/twitter.png" class="img-redes" alt="Logo do twitter"
+        /></a>
+        <a href="https://www.youtube.com"
+          ><img src="img/youtube.png" class="img-redes" alt="Logo do youtube"
+        /></a>
+        <a href="https://www.instagram.com"
+          ><img
+            src="img/instagram.png"
+            class="img-redes"
+            alt="Logo do instagram"
+        /></a>
+      </nav>
+    </section>
+
+    <section id="depoimentos">
+      <h2>DEPOIMENTOS</h2>
+      <div class="box-depoimentos">
+        <div class="card">
+          <img
+            class="user"
+            src="img/foto-depoimentos-2.png"
+            alt="Foto do aluno Bruno P."
+          />
+          <h3>Bruno P.</h3>
+          <div class="stars">
+            <img
+              class="estrela"
+              src="img/star.svg"
+              alt="Estrela de Avaliação"
+            />
+            <img
+              class="estrela"
+              src="img/star.svg"
+              alt="Estrela de Avaliação"
+            />
+            <img
+              class="estrela"
+              src="img/star.svg"
+              alt="Estrela de Avaliação"
+            />
+            <img
+              class="estrela"
+              src="img/star.svg"
+              alt="Estrela de Avaliação"
+            />
+            <img
+              class="estrela"
+              src="img/star.svg"
+              alt="Estrela de Avaliação"
+            />
+          </div>
+
+          <p>
+            "Incrível! Curso de programação da CodeVerse é top! Aprendi muito e
+            agora sou um programador de verdade. Recomendo!"
+          </p>
+        </div>
+
+        <div class="card">
+          <img
+            class="user"
+            src="img/foto-depoimentos-1.png"
+            alt="Foto da aluna Jessica F."
+          />
+          <h3>Jessica F.</h3>
+          <div class="stars">
+            <img
+              class="estrela"
+              src="img/star.svg"
+              alt="Estrela de Avaliação"
+            />
+            <img
+              class="estrela"
+              src="img/star.svg"
+              alt="Estrela de Avaliação"
+            />
+            <img
+              class="estrela"
+              src="img/star.svg"
+              alt="Estrela de Avaliação"
+            />
+            <img
+              class="estrela"
+              src="img/star.svg"
+              alt="Estrela de Avaliação"
+            />
+            <img
+              class="estrela"
+              src="img/star.svg"
+              alt="Estrela de Avaliação"
+            />
+          </div>
+
+          <p>
+            "Simplesmente sensacional! O curso de programação da CodeVerse
+            superou todas as minhas expectativas. Aprendi de forma prática e
+            objetiva, com conteúdo relevante e atualizado. Os instrutores são
+            verdadeiros experts e sempre estavam disponíveis para ajudar."
+          </p>
+        </div>
+
+        <div class="card">
+          <img
+            class="user"
+            src="img/foto-depoimentos-3.png"
+            alt="Foto do aluno Nilton A."
+          />
+          <h3>Nilton A.</h3>
+          <div class="stars">
+            <img
+              class="estrela"
+              src="img/star.svg"
+              alt="Estrela de Avaliação"
+            />
+            <img
+              class="estrela"
+              src="img/star.svg"
+              alt="Estrela de Avaliação"
+            />
+            <img
+              class="estrela"
+              src="img/star.svg"
+              alt="Estrela de Avaliação"
+            />
+            <img
+              class="estrela"
+              src="img/star.svg"
+              alt="Estrela de Avaliação"
+            />
+            <img
+              class="estrela"
+              src="img/star.svg"
+              alt="Estrela de Avaliação"
+            />
+          </div>
+
+          <p>
+            "Excelente curso de programação da CodeVerse! Aprendizado prático e
+            eficiente. Recomendo!"
+          </p>
+        </div>
+
+        <div class="card">
+          <img
+            class="user"
+            src="img/foto-depoimentos-4.png"
+            alt="Foto da aluna Alice B."
+          />
+          <h3>Alice B.</h3>
+          <div class="stars">
+            <img
+              class="estrela"
+              src="img/star.svg"
+              alt="Estrela de Avaliação"
+            />
+            <img
+              class="estrela"
+              src="img/star.svg"
+              alt="Estrela de Avaliação"
+            />
+            <img
+              class="estrela"
+              src="img/star.svg"
+              alt="Estrela de Avaliação"
+            />
+            <img
+              class="estrela"
+              src="img/star.svg"
+              alt="Estrela de Avaliação"
+            />
+            <img
+              class="estrela"
+              src="img/star.svg"
+              alt="Estrela de Avaliação"
+            />
+          </div>
+
+          <p>
+            "Acabei de concluir o curso de programação oferecido pela CodeVerse
+            e estou extremamente satisfeita com a minha experiência. O conteúdo
+            era completo, atualizado e apresentado de forma clara e didática. Os
+            instrutores eram altamente qualificados e sempre dispostos a
+            esclarecer dúvidas. Além disso, a plataforma online era intuitiva e
+            de fácil navegação."
+          </p>
+        </div>
+
+        <div class="card">
+          <img
+            class="user"
+            src="img/foto-depoimentos-5.png"
+            alt="Foto da aluna Mariana P."
+          />
+          <h3>Mariana P.</h3>
+          <div class="stars">
+            <img
+              class="estrela"
+              src="img/star.svg"
+              alt="Estrela de Avaliação"
+            />
+            <img
+              class="estrela"
+              src="img/star.svg"
+              alt="Estrela de Avaliação"
+            />
+            <img
+              class="estrela"
+              src="img/star.svg"
+              alt="Estrela de Avaliação"
+            />
+            <img
+              class="estrela"
+              src="img/star.svg"
+              alt="Estrela de Avaliação"
+            />
+            <img
+              class="estrela"
+              src="img/star.svg"
+              alt="Estrela de Avaliação"
+            />
+          </div>
+
+          <p>
+            "Sem palavras! O curso de programação da CodeVerse foi simplesmente
+            incrível. Aprendi de forma fácil e divertida, e agora me sinto
+            confiante para embarcar nessa jornada como programadora. Recomendo
+            de olhos fechados!"
+          </p>
+        </div>
+
+        <div class="card">
+          <img
+            class="user"
+            src="img/foto-depoimentos-6.png"
+            alt="Foto da aluna Sara M."
+          />
+          <h3>Sara M.</h3>
+          <div class="stars">
+            <img
+              class="estrela"
+              src="img/star.svg"
+              alt="Estrela de Avaliação"
+            />
+            <img
+              class="estrela"
+              src="img/star.svg"
+              alt="Estrela de Avaliação"
+            />
+            <img
+              class="estrela"
+              src="img/star.svg"
+              alt="Estrela de Avaliação"
+            />
+            <img
+              class="estrela"
+              src="img/star.svg"
+              alt="Estrela de Avaliação"
+            />
+            <img
+              class="estrela"
+              src="img/star.svg"
+              alt="Estrela de Avaliação"
+            />
+          </div>
+
+          <p>
+            "Simplesmente fantástico! O curso de programação da CodeVerse mudou
+            a minha vida. Aprendi habilidades valiosas, conquistei confiança e
+            abri portas para novas oportunidades. Agradeço à equipe da CodeVerse
+            por proporcionar uma experiência de aprendizado tão enriquecedora.
+            Recomendo a todos que desejam trilhar o caminho da programação com
+            excelência!"
+          </p>
+        </div>
+
+        <div class="card">
+          <img
+            class="user"
+            src="img/foto-depoimentos-7.png"
+            alt="Foto do aluno Lucas D."
+          />
+          <h3>Lucas D.</h3>
+          <div class="stars">
+            <img
+              class="estrela"
+              src="img/star.svg"
+              alt="Estrela de Avaliação"
+            />
+            <img
+              class="estrela"
+              src="img/star.svg"
+              alt="Estrela de Avaliação"
+            />
+            <img
+              class="estrela"
+              src="img/star.svg"
+              alt="Estrela de Avaliação"
+            />
+            <img
+              class="estrela"
+              src="img/star.svg"
+              alt="Estrela de Avaliação"
+            />
+            <img
+              class="estrela"
+              src="img/star.svg"
+              alt="Estrela de Avaliação"
+            />
+          </div>
+
+          <p>
+            "O curso de programação da CodeVerse foi um divisor de águas para
+            mim. Com uma abordagem prática e desafiadora, pude desenvolver
+            habilidades essenciais na área de programação. Os instrutores são
+            extremamente capacitados e a plataforma de ensino é de primeira
+            qualidade. Estou muito grato pela oportunidade de aprender com a
+            CodeVerse. Recomendo de coração!"
+          </p>
+        </div>
+
+        <div class="card">
+          <img
+            class="user"
+            src="img/foto-depoimentos-8.png"
+            alt="Foto do aluno Marcos S."
+          />
+          <h3>Marcos S.</h3>
+          <div class="stars">
+            <img
+              class="estrela"
+              src="img/star.svg"
+              alt="Estrela de Avaliação"
+            />
+            <img
+              class="estrela"
+              src="img/star.svg"
+              alt="Estrela de Avaliação"
+            />
+            <img
+              class="estrela"
+              src="img/star.svg"
+              alt="Estrela de Avaliação"
+            />
+            <img
+              class="estrela"
+              src="img/star.svg"
+              alt="Estrela de Avaliação"
+            />
+            <img
+              class="estrela"
+              src="img/star.svg"
+              alt="Estrela de Avaliação"
+            />
+          </div>
+
+          <p>
+            "Simplificando: o curso de programação da CodeVerse é simplesmente
+            brilhante! Aprendi de forma clara e concisa, sem enrolação. Os
+            materiais são excelentes e os instrutores são verdadeiros mentores.
+            Estou empolgado com as possibilidades que esse curso abriu para mim.
+            Se você quer dominar a programação, não procure mais, a CodeVerse é
+            a escolha certa!"
+          </p>
+        </div>
+
+        <div class="card">
+          <img
+            class="user"
+            src="img/foto-depoimentos-9.png"
+            alt="Foto da aluna Luísa C."
+          />
+          <h3>Luísa C.</h3>
+          <div class="stars">
+            <img
+              class="estrela"
+              src="img/star.svg"
+              alt="Estrela de Avaliação"
+            />
+            <img
+              class="estrela"
+              src="img/star.svg"
+              alt="Estrela de Avaliação"
+            />
+            <img
+              class="estrela"
+              src="img/star.svg"
+              alt="Estrela de Avaliação"
+            />
+            <img
+              class="estrela"
+              src="img/star.svg"
+              alt="Estrela de Avaliação"
+            />
+            <img
+              class="estrela"
+              src="img/star.svg"
+              alt="Estrela de Avaliação"
+            />
+          </div>
+
+          <p>
+            O curso foi incrível! Aprendi muito em pouco tempo e agora estou
+            preparada para encarar desafios reais. Recomendo demais!"
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="formados">
+      <h2>MAIS DE 1000 PROFISSIONAIS FORMADOS</h2>
+      <div class="box-formados">
+        <div class="lista-icones">
+          <h3>Este curso inclui:</h3>
+          <ul>
+            <li id="icone1">Mais de 100 horas de vídeo-aulas</li>
+            <li id="icone2">Apostila de HTML e CSS disponível em pdf</li>
+            <li id="icone3">Suporte para dúvidas</li>
+            <li id="icone4">
+              Fórum para comentários e discussões com outros alunos
+            </li>
+            <li id="icone5">Acesso em dispositivos móveis</li>
+            <li id="icone6">Certificado de conclusão gratuito</li>
+            <li id="icone7">Acesso vitalício</li>
+          </ul>
+        </div>
+
+        <div class="imagem-formados">
+          <figure>
+            <img src="img/filler-4.jpg" alt="Alunos de programação em aula" />
+          </figure>
+
+          <!-- input tem que ser usado dentro da tag form
+usar tag a e estilizar com css -->
+          <form action="processar_matricula.php" method="POST">
+            <input
+              type="image"
+              name="btn-img"
+              src="img/botao.png"
+              alt="Botão 'Matricule-se'"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="perguntas-frequentes">
+      <h2>PERGUNTAS FREQUENTES</h2>
+
+      <div class="perguntas">
+        <ul>
+          <li>
+            <details>
+              <summary>O que vou aprender neste curso?</summary>
+              <div class="faq">
+                <p>
+                  Neste curso você aprenderá os fundamentos de HTML e CSS,
+                  incluindo como criar e estruturar páginas da web, aplicar
+                  técnicas de estilo e layout, trabalhar com imagens e links e
+                  tornar suas páginas da web responsivas e compatíveis com
+                  dispositivos móveis.
+                </p>
+              </div>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary>Preciso ter experiência prévia em programação?</summary>
+              <div class="faq">
+                <p>
+                  Não, você não precisa de nenhuma experiência anterior em
+                  programação. Este curso é adequado para iniciantes e não
+                  pressupõe nenhum conhecimento prévio de HTML, CSS ou conceitos
+                  de programação.
+                </p>
+              </div>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary>
+                De quais ferramentas eu preciso para realizar este curso?
+              </summary>
+              <div class="faq">
+                <p>
+                  Tudo o que você precisa é de um computador com um editor de
+                  texto e um navegador da web. Recomendamos o uso de editores de
+                  texto populares como Visual Studio Code ou Sublime Text,
+                  juntamente com qualquer navegador da web moderno como Chrome,
+                  Firefox ou Safari.
+                </p>
+              </div>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary>Existem avaliações ou testes neste curso?</summary>
+              <div class="faq">
+                <p>
+                  Sim, o curso inclui testes, exercícios de codificação e
+                  projetos para ajudar você a praticar e reforçar o que
+                  aprendeu. Essas avaliações ajudarão a avaliar o seu
+                  entendimento sobre o conteúdo apresentado nas aulas.
+                </p>
+              </div>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary>Haverá um certificado ao concluir?</summary>
+              <div class="faq">
+                <p>
+                  Sim, ao concluir com êxito o curso, você receberá um
+                  certificado de conclusão. Este certificado pode ser usado para
+                  mostrar suas novas habilidades a potenciais empregadores ou
+                  como evidência de suas realizações.
+                </p>
+              </div>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary>
+                Posso acessar o material do curso após a conclusão?
+              </summary>
+              <div class="faq">
+                <p>
+                  Sim, uma vez matriculado você terá acesso vitalício a todo o
+                  material. Você pode revisitar as lições e rever o conteúdo a
+                  qualquer momento no futuro..
+                </p>
+              </div>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary>Há suporte disponível se eu tiver dúvidas?</summary>
+              <div class="faq">
+                <p>
+                  Sim, há um sistema de suporte dedicado onde você poderá fazer
+                  perguntas, esclarecer dúvidas e buscar orientação dos
+                  instrutores do curso ou de outros alunos, por meio de fórum de
+                  discussão comunitária para interação e suporte.
+                </p>
+              </div>
+            </details>
+          </li>
+          <li>
+            <!-- Cria uma seção de detalhes que o usuário pode abrir e fechar -->
+            <details>
+              <summary>Este curso é atualizado regularmente?</summary>
+              <div class="faq">
+                <p>
+                  Sim, o conteúdo do curso é revisado e atualizado regularmente
+                  para refletir as melhores práticas, padrões e tendências mais
+                  recentes no desenvolvimento de HTML e CSS.
+                </p>
+              </div>
+            </details>
+          </li>
+        </ul>
+      </div>
+
+      <div class="box-contato">
+        <div class="informacao-contato">
+          <h3>
+            Não encontrou sua pergunta? Entre em contato conosco por meio do
+            formulário ao lado e esclareça todas as suas dúvidas adicionais, ou
+            deixe um comentário.
+          </h3>
+          <ul>
+            <li>RESPONDEMOS EM ATÉ 24 HORAS</li>
+            <li>TODAS AS SUAS INFORMAÇÕES SÃO CONFIDENCIAIS</li>
+          </ul>
+        </div>
+
+        <div class="formulario-contato">
+          <form action="enviar_mensagem.php" method="POST">
+            <label for="nome">Nome completo:</label><br />
+            <input
+              type="text"
+              id="nome2"
+              name="nome"
+              placeholder="Digite seu nome"
+              required
+            /><br /><br />
+
+            <label for="email">Email:</label><br />
+            <input
+              type="email"
+              id="email2"
+              name="email"
+              placeholder="Digite seu e-mail"
+              required
+            /><br /><br />
+
+            <label for="telefone">Telefone:</label><br />
+            <input
+              type="tel"
+              id="telefone2"
+              name="telefone"
+              placeholder="Digite seu telefone"
+              required
+            /><br /><br />
+
+            <span>Pergunta/Comentário:</span><br />
+
+            <textarea
+              name="mensagem"
+              cols="65"
+              rows="10"
+              minlength="10"
+              maxlength="270"
+              required
+            ></textarea
+            ><br /><br />
+
+            <span>Estado:</span><br />
+            <!-- Cria uma estrutura que permite a seleção de um item  -->
+            <select name="estado">
+              <option value="ac">Acre</option>
+              <option value="al">Alagoas</option>
+              <option value="ap">Amapá</option>
+              <option value="am">Amazonas</option>
+              <option value="ba">Bahia</option>
+              <option value="ce">Ceará</option>
+              <option value="es">Espírito Santo</option>
+              <option value="go">Goiás</option>
+              <option value="ma">Maranhão</option>
+              <option value="mt">Mato Grosso</option>
+              <option value="ms">Mato Grosso do Sul</option>
+              <option value="mg">Minas Gerais</option>
+              <option value="pa">Pará</option>
+              <option value="pb">Paraíba</option>
+              <option value="pr">Paraná</option>
+              <option value="pe">Pernambuco</option>
+              <option value="pi">Piauí</option>
+              <option value="rj">Rio de Janeiro</option>
+              <option value="rn">Rio Grande do Norte</option>
+              <option value="rs">Rio Grande do Sul</option>
+              <option value="ro">Rondônia</option>
+              <option value="rr">Roraima</option>
+              <option value="sc">Santa Catarina</option>
+              <option value="sp">São Paulo</option>
+              <option value="se">Sergipe</option>
+              <option value="to">Tocantins</option></select
+            ><br /><br />
+            <input type="submit" value="Enviar Pergunta/Comentario" />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="aula">
+      <h2>Assista a Nossa Aula Teste Agora Mesmo</h2>
+
+      <div class="box-aula">
+        <div class="video">
+          <iframe
+            src="https://www.youtube.com/embed/3oSIqIqzN3M"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="texto-video">
+          <figure>
+            <img
+              src="img/videoestrelas.png"
+              alt="Estrelas azuis de Avaliação"
+            />
+          </figure>
+
+          <p>
+            O curso segue com aulas gravadas com espaço para perguntas e
+            comentários com os professores, e aulas ao vivo em modelo EAD com
+            todo o suporte necessário para garantir o maior aproveitamento
+            possível
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="parceiros">
+      <h2>NOSSOS PARCEIROS</h2>
+      <div class="box-parceiros">
+        <figure>
+          <img src="img/parceiro1.png" alt="Logo da empresa TechGenius" />
+          <img src="img/parceiro2.png" alt="Logo da empresa CodeCrafters" />
+          <img src="img/parceiro3.png" alt="Logo da empresa ByteMasters" />
+          <img src="img/parceiro4.png" alt="Logo da empresa DevTech" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- Cria um rodapé -->
+    <section class="secao-footer">
+      <div class="div-textos-footer">
+        <div>
+          <h3 class="h3-footer">CodeVerse</h3>
+        </div>
+
+        <div class="div-tags">
+          <a class="link-footer" href="#matriculas">Matrículas</a>
+          <br />
+          <br />
+          <a class="link-footer" href="#depoimentos">Depoimentos</a>
+        </div>
+        <div class="div-tags">
+          <a class="link-footer" href="#sobre">Sobre nós</a>
+          <br />
+          <br />
+          <a class="link-footer" href="#header">Voltar ao topo</a>
+        </div>
+      </div>
+
+      <hr class="hr-footer" />
+
+      <div class="div-img-footer">
+        <nav>
+          <a href="https://www.facebook.com"
+            ><img
+              class="img-redes-footer"
+              src="img/facebook.png"
+              alt="Logo do facebook"
+          /></a>
+          <a href="https://www.twitter.com"
+            ><img
+              class="img-redes-footer"
+              src="img/twitter.png"
+              alt="Logo do twitter"
+          /></a>
+          <a href="https://www.youtube.com"
+            ><img
+              class="img-redes-footer"
+              src="img/youtube.png"
+              alt="Logo do youtube"
+          /></a>
+          <a href="https://www.instagram.com"
+            ><img
+              class="img-redes-footer"
+              src="img/instagram.png"
+              alt="Logo do instagram"
+          /></a>
+        </nav>
+      </div>
+    </section>
+  </body>
+</html>

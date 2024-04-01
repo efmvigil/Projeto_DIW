@@ -1,0 +1,577 @@
+
+
+body {
+/* Especifica a fonte do texto */
+  font-family: 'Alegreya Sans';
+/* Especifica todas as propriedades da margem em
+uma declaração */
+  margin: 0;
+/*Especifica todas as propriedades da margem
+interna em uma declaração */
+  padding: 0;
+/* Especifica uma cor para o fundo*/
+  background-color: #1A1A1D;
+}
+
+section {
+  margin-bottom: 180px;
+}
+
+
+form {
+  width: 400px;
+  height: 100%;
+  background-color: #950740;
+ 
+}
+
+h1 {
+/* Especifica a cor do texto */
+  color: #333;
+  margin: 0;
+}
+
+h2{
+  margin-left: auto;
+  margin-right: auto;
+  width: 1500px;
+  text-align: center;
+  font-size: 60px;
+  color: #fff;
+  font-family: 'Exo 2', sans-serif;
+}
+
+h3{
+  font-size: 40px;
+  color: #fff;
+}
+
+header {
+  background-color: #1A1A1D;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+header img {
+  display: inline-block;
+}
+
+
+
+.li-nav{
+  border: 1px solid transparent;
+  padding: 5px 35px;
+  background: #941542;
+  color: white;
+  list-style-type: none;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.li-nav:hover {
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.a-nav{
+  color: white;
+  text-decoration: none;
+    }
+
+
+nav ul li {
+/* Especifica o formato que um elemento vai aparecer. Inline: todos os elementos ficam alinhados em uma linha */
+  display: inline-block;
+/* Especifica a margem da direita*/
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+nav ul li a {
+/* Insere detalhes em um texto */
+  text-decoration: none;
+}
+
+.box-home {
+  text-align: center;
+  background-color: #950740;
+
+}
+
+.imagem-home {
+  display: inline-block;
+  width: 450px;
+  height: 242px;
+/* Controla o alinhamento vertical dos elementos*/
+  vertical-align: top;
+
+}
+
+
+#home img {
+  height: 100px;
+}
+
+#home h3 {
+  font-size: 20px;
+  color: #000;
+}
+
+#home p {
+  display: inline-block;
+  color: #fff;
+  width: 250px;
+  margin-top: 0px;
+}
+
+
+#matriculas h3 {
+  text-align: center;
+  font-family: 'Exo 2', sans-serif;
+}
+
+#matriculas input {
+  height: 5%;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 15px;
+
+}
+
+#btn-matriculas {
+  background: #5F3030;
+  border-radius: 12px;
+  color: white;
+  text-transform: uppercase;
+}
+
+
+
+.box-matriculas form {
+  color: #fff;
+  font-size: 20px;
+  padding-top: 45px;
+  height: 100%;
+  text-align: center;
+}
+
+.formulario-matriculas {
+  height: 100%;
+  display: inline-block;
+  vertical-align: top;
+  width: 425px;
+}
+
+.conteudo {
+  background-color: #950740;
+  width: 425px;
+  height: 615px;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 25px;
+}
+
+.conteudo li {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: left;
+  font-family: 'Exo 2', sans-serif;
+}
+
+.box-matriculas {
+  text-align: center;
+  height: 570px;
+
+}
+
+.box-sobre {
+  background-color: #950740;
+  }
+
+#sobre p {
+  width: 600px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 25px;
+/*Espaçamento entre as linhas  */
+  line-height: 40px;
+  text-align: justify;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#sobre h3 {
+margin-left: auto;
+margin-right: auto;
+width: 490px;
+}
+
+.logos {
+text-align: center;
+}
+
+.img-redes {
+  width: 95px;
+  height: auto;
+  padding-right: 30px;
+}
+
+.box-depoimentos * {
+  margin: 0;  
+}
+
+#depoimentos {
+/* Especifica a altura do elemento  */
+  height: 100%;
+  background-color: #1A1A1D;
+}
+
+.card .user {
+/* Especifica a largura do elemento */
+  width: 200px;
+  height: 200px;
+/* arredonda as bordas da imagem*/
+  border-radius: 50%;
+/* Especifica a margem de baixo */
+  margin-bottom: 15px;
+}
+
+
+.box-depoimentos {
+/* Permite posicionar os elementos em linhas e colunas  */
+  display: grid;
+/* Especifica o número de colunas na grid */
+  grid-template-columns: 1fr 1fr 1fr;
+/* Especifica a largura máxima do elemento  */
+  max-width: 980px;
+  margin: 0 auto;
+/* Tamanho do espaçamento entre as colunas  */
+  grid-gap: 40px;
+
+
+}
+
+.card {
+  background-color: #950740;
+  display: flex;
+/* Define a direção dos flex itens  */
+  flex-direction: column;
+/* alinha os flex itens de acordo com o eixo do container */
+  align-items: center;
+  padding: 35px 40px;
+}
+
+.card h3 {
+  margin-bottom: 5px;
+}
+
+.estrela {
+  width: 20px;
+}
+
+.box-depoimentos .card p{
+  margin-top: 20px;
+/* Especifica o alinhamento horizontal do texto */
+  text-align: center;
+  font-size: 18px;
+}
+
+#depoimentos h3, p{
+  font-family: 'Alegreya Sans';
+  color: white;
+}
+
+
+.box-formados{
+  display: flex;
+  justify-content: center;
+
+}
+
+.lista-icones {
+  height: 560px;
+  display: flex;
+  vertical-align: top;
+  flex-direction: column;
+}
+
+.lista-icones h3 {
+  text-align: center;
+  margin-bottom: 0;
+  padding-right: 150px;
+}
+
+.lista-icones ul li {
+  color: #fff;
+  font-size: 20px;
+
+}
+
+.lista-icones ul li::marker {
+  font-size: 58px;
+}
+
+.imagem-formados {
+  display: flex;
+  vertical-align: top;
+  height: 560px;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 70px;
+  margin-top: 70px;
+
+}
+
+#icone1 {
+  list-style-image: url('../img/play-circle.svg');
+  color: #fff;
+  
+}
+
+#icone2 {
+  list-style-image: url('../img/file-text.svg');
+  
+}
+
+#icone3 {
+  list-style-image: url('../img/help-circle.svg');
+  
+}
+
+#icone4 {
+  list-style-image: url('../img/message-circle.svg');
+  
+}
+
+#icone5 {
+  list-style-image: url('../img/device-mobile.svg');
+  
+}
+
+#icone6 {
+  list-style-image: url('../img/trophy.svg');
+  
+}
+
+#icone7 {
+  list-style-image: url('../img/repeat.svg');
+  
+}
+
+.box-formados form {
+  width: 250px;
+  height: 88px;
+  background-color: #1A1A1D;
+  margin-top: 0;
+}
+
+.box-formados img {
+  height: 300px;
+}
+
+.box-formados input {
+  width: 250px;
+}
+
+#formados {
+  margin-bottom: 0;
+}
+
+
+.perguntas {
+  padding-top: 30px;
+  justify-content: center;
+}
+
+.perguntas ul {
+  list-style-type: none;
+  width: 50%;
+  color: #fff;
+  font-size: 22px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+}
+
+summary {
+
+  padding: 16px;
+  background-color: #950740;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 3px;
+  text-transform: uppercase;
+}
+
+summary:hover {
+  background-color: #c60955;
+  transition: 0.1s;
+}
+
+.box-contato {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.informacao-contato {
+  display: inline-block;
+  width: 615px;
+  height: 715px;
+  vertical-align: top;
+  margin-right: 15px;
+}
+
+.informacao-contato h3 {
+  color: #fff;
+  width: 600px;
+  text-align: justify;
+  font-size: 35px;
+}
+
+.informacao-contato ul li {
+  color: #fff;
+  font-size: 25px;
+  text-align: justify;
+  padding-top: 20px;
+}
+
+.formulario-contato {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 15px;
+}
+
+.box-contato form {
+  color: #fff;
+  font-size: 20px;
+  padding-top: 15px;
+  height: 100%;
+  text-align: left;
+  height: 700px;
+  width: 600px;
+  padding-left: 15px;
+}
+
+.box-contato input {
+  height: 5%;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.box-aula {
+  text-align: center;
+
+}
+
+.video {
+  background-color: #950740;
+  width: 570px;
+  height: 325px;
+  display: inline-block;
+  padding-top: 10px;
+  vertical-align: top;
+  }
+
+.texto-video {
+  background-color: #950740;
+  width: 400px;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 25px;
+  height: 335px;
+
+}
+
+iframe {
+  width: 560px;
+  height: 315px;
+  border: 0;
+}
+
+.texto-video p {
+  width: 380px;
+  font-size: 22px;
+  margin-top: 0;
+  display: inline-block;
+  text-align: justify;
+
+}
+
+.box-aula img {
+  height: 100px;
+}
+
+.box-parceiros {
+  text-align: center;
+}
+
+.box-parceiros figure {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.box-parceiros img {
+  height: 300px;
+  width: 300px;
+  padding-right: 40px;
+}
+
+.secao-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #941542;
+    margin-top: 0;
+    width: 100%;
+    margin-bottom: 0;
+    padding-right: 0;
+
+}
+
+.div-textos-footer {
+    display: flex;
+    gap: 115px; 
+    align-items: center;
+    color: white;
+}
+
+.div-tags {
+    display: flex;
+    flex-direction: column;
+    text-decoration: underline;
+}
+
+.link-footer {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.div-img-footer {
+    text-align: center;
+    width: 24%;
+    margin-top: 3%;
+}
+
+.img-redes-footer {
+    width: 50px;
+    height: auto;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.h3-footer {
+    font-size: 85px;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.hr-footer {
+    background-color: white;
+    height: 2px;
+    width: 99.9%;
+}
+
+
